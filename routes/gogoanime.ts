@@ -12,7 +12,22 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
 
   fastify.get('/', (_, rp) => {
     rp.status(200).send({
-     "Access denied"
+     intro:
+        "Welcome to the anime provider: check out the provider's website @ https://www1.gogoanime.bid/",
+      routes: [
+        '/:query',
+        '/info/:id',
+        '/watch/:episodeId',
+        '/servers/:episodeId',
+        '/genre/:genre',
+        '/genre/list',
+        '/top-airing',
+        '/movies',
+        '/popular',
+        '/recent-episodes',
+        '/anime-list',
+      ],
+      documentation: '',
     });
   });
 
