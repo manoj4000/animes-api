@@ -12,22 +12,7 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
 
   fastify.get('/', (_, rp) => {
     rp.status(200).send({
-      intro:
-        "Welcome to the gogoanime provider: check out the provider's website @ https://www1.gogoanime.bid/",
-      routes: [
-        '/:query',
-        '/info/:id',
-        '/watch/:episodeId',
-        '/servers/:episodeId',
-        '/genre/:genre',
-        '/genre/list',
-        '/top-airing',
-        '/movies',
-        '/popular',
-        '/recent-episodes',
-        '/anime-list',
-      ],
-      documentation: 'https://animetize-docs.vercel.app/',
+     "Access denied"
     });
   });
 
